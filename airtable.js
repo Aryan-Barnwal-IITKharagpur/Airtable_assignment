@@ -154,4 +154,8 @@ app.post('/fetch-placement-details', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+  res.status(200).send('Airtable API is running'); // Or a JSON response
+});
+
 module.exports = app;
