@@ -159,3 +159,5 @@ app.post('/fetch-placement-details', async (req, res) => {
 app.listen(PORT, () => {
     console.log("HELLO");
 });
+
+module.exports = app;
