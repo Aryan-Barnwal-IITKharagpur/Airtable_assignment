@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "cors": "^2.8.5",
+    "create-react-app": "^5.0.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "web-vitals": "^4.2.4"
+  }
+}
