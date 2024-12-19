@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.js",
-      "use": "@vercel/node"
+      "src": "airtable.js", // Your server file
+      "use": "@vercel/node" // Tells Vercel to use the Node.js builder
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)", 
-      "dest": "/$1"
+      "src": "/(.*)", // Catch all routes
+      "dest": "airtable.js" // Route all requests to your server file
     }
   ]
 }
