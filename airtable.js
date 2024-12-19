@@ -81,6 +81,7 @@ async function getPlacementDetails(placementId) {
 // API endpoint to fetch user and placement details
 app.post('/fetch-details', async (req, res) => {
 
+    alert(email);
     const email = req.body.query;
     
     alert(email);
