@@ -17,7 +17,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-
 const Base_id = "app755IAlA5by0SIb";
 const Api_key = "patcxIhodwFPaz8kB.ebb62ecc8edabb1276185f24c7d6f8170730119b45c6bec6ca4e66a1a7705fbc";
 const Table = "Clients Active | 🔁 | Operational";
@@ -83,6 +82,8 @@ async function getPlacementDetails(placementId) {
 app.post('/fetch-details', async (req, res) => {
 
     const email = req.body.query;
+    
+    alert(email);
     
     if (!email) {
         return res.status(400).json({ error: "Email is required" });
