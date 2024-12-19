@@ -81,10 +81,10 @@ async function getPlacementDetails(placementId) {
 // API endpoint to fetch user and placement details
 app.post('/fetch-details', async (req, res) => {
 
-    alert(email);
+    console.log(email);
     const email = req.body.query;
     
-    alert(email);
+    console.log(email);
     
     if (!email) {
         return res.status(400).json({ error: "Email is required" });
