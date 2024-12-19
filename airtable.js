@@ -4,7 +4,6 @@ const cors = require('cors');
 const Airtable = require('airtable');
 
 const app = express();
-const PORT = 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -153,11 +152,6 @@ app.post('/fetch-placement-details', async (req, res) => {
         console.error("Error:", error);
         res.status(500).json({ error: "Internal server error" });
     }
-});
-
-// Start the server
-app.listen(PORT, () => {
-    console.log("HELLO");
 });
 
 module.exports = app;
